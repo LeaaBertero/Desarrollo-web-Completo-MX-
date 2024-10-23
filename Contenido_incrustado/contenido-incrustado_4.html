@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contendi incrustado_4</title>
+</head>
+
+<body>
+    
+    <h1>contenido incrustado</h1>
+    <canvas id="Mi_tablero" width="600px" height="400px" style="border: 8px solid black;"></canvas>
+
+    <script>
+        var c = document.getElementById("Mi_tablero");
+        var ct = c.getContext("2d");
+
+        ct.fillStyle = "green";
+        ct.fillRect( 230, 150, 100, 100 );
+
+        ct.fillStyle = "yellow";
+        ct.fillRect( 20, 100, 100, 100 );        
+        
+        ct.strokeRect (150, 150, 50, 50);
+
+    </script>
+
+    
+
+
+</body>
+</html>

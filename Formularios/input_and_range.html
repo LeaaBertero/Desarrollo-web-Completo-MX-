@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_and_range</title>
+
+
+    <style>
+        button{
+            box-shadow: 5px 5px 5px blue;
+        }
+
+        fieldset{
+            font-weight: bolder;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px gray;
+
+        }
+        
+        .tituloprincipal{
+            font-size: 60px; 
+            background-color: tomato; 
+            color: wheat; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 40px;
+        }
+
+        .nombre{
+            font-weight: bolder; 
+            font-size: 25px; 
+            text-shadow: 2px 2px 2px orangered;
+        }
+
+        .apellido{
+            font-weight: bolder; 
+            font-size: 25px; 
+            text-shadow: 2px 2px 2px orangered;
+        }
+
+        .experiencia{
+            font-size: 40px; 
+            font-weight: bolder; 
+            text-shadow: 2px 2px 2px rgb(16, 165, 235);
+        }
+
+        .selecc_lenguaje{
+            font-size: 50px; 
+            font-weight: bolder; 
+            text-shadow: 2px 2px 2px yellowgreen;
+        }
+
+        .bt_violet{
+            box-shadow: 5px 5px 5px blueviolet;
+        }
+
+        .titulo_range{
+            text-shadow: 5px 5px 5px rgb(253, 74, 223);
+        }
+
+        .datalist{
+            font-size: 40px; 
+            text-shadow: 2px 2px 2px green;
+        }
+
+        .bt_enviar{
+            box-shadow: 5px 5px 5px red;
+        }
+
+    </style>
+
+    
+
+</head>
+
+<body>
+
+    <h1 class="tituloprincipal">Seleccionador de opciones</h1><br>
+
+    
+    <form action="" method=" get">
+
+        <fieldset >Datos personales</fieldset>
+        <label class="nombre" for="Nombre">Nombre</label>
+        <input type="text" id="Nombre"><br>
+        <label class="apellido" for="Apellido">Apellido</label>
+        <input type="text" id="Apellido"><br>
+
+        <fieldset>
+
+            <legend class="experiencia">Experiencia</legend>
+
+            <label class="selecc_lenguaje" for="lenguaje">Selecciona un lenguaje</label><br><br>
+            
+            <select name="lenguaje" id="lenguaje">
+
+                <!-- con el atributo "disabled" es decir, (Desactivado), se desactivan los controles de multiple opción" -->
+
+                <option value="Html">Html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+                <option value="php">php</option> <!--Tambien se pueden desactivar opciones puntuales-->
+                <option disabled value="mysql">mysql</option>
+                <option value="nodejs" selected>nodejs</option>
+                <option value="phyton">phyton</option>
+
+                <br>
+
+
+            </select>
+
+        </fieldset>
+
+        <br>
+        <button  type="submit">CONFIRMAR</button><br>
+
+        
+
+        <br>
+        <br>
+
+        <form action="" method=" get">
+
+            <input name="navegador" type="text" list="navegadores">
+
+            <datalist id="navegadores">
+
+                <option value="Edge">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Zafari">
+                <option value="Firefox">
+                <option value="Internet explorer">
+
+            </datalist>
+
+            <button class="bt_violet" type="submit">Confirmar</button>
+
+        </form>
+
+        <!-- formulario -->
+
+        <form action="" method="get">
+
+            <h1 class="titulo_range">Input and Range</h1>
+
+            <div class="datalist">DataList</div>
+
+            <input type="range" step="30" name="Rango" id="" min="0" max="250" style="width: 300px;">
+            <br>
+
+            <!-- formularios typo range -->
+            <!-- En el impút list, colocar un nombre para identificar y en el datalist
+        poner el id del atributo list del input -->
+            <input type="range" name="volumen" list="listaVolumen">
+
+            <datalist id="listaVolumen">
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
+            </datalist><br><br>
+
+            <button class="bt_enviar" type="submit">Enviar</button>
+
+        </form>
+</body>
+
+</html>

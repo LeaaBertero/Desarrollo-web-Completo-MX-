@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericion_formularios</title>
+</head>
+
+<body>
+
+    <form action="" method="get" enctype="">
+
+        <input name="oculto" type="hidden" value="codeseguridad">
+
+        <br>
+        <br>
+        <div>Input de tipo texto</div>
+        <input name="Nombre" type="text">
+        <br>
+        <br>
+        <div>Input de tipo texto</div>
+        <input name="Apellido" type="text">
+        <br>
+        <br>
+        <div>Input de tipo dato (esto es un calendario)</div>
+        <input type="date">
+        <br>
+        <br>
+        <div>input de tipo numero (para insertar solamente numeros,<br>
+        <br>no deja ingresar otro tipo de dato que no sea de tipo numero)</div>
+        <br>
+        <input type="number">
+        <br>
+        <br>
+        <div>boton de tipo envio</div>
+        <input type="submit">
+        <br>
+        <br>
+        <div>input de tipo telefono</div>
+        <input type="phone" name="Telefono" id="">
+        <br>
+        <br>
+        <div>input de tipo eniviar(botón)</div>
+        <input type="submit" name="Enviar" id="">
+
+        <!-- el atributo name, debe tener el mismo nombre por que es el que lo relaciona con los mismos valores (frutas) -->
+        <br>
+        <br>
+        <div>Chexbox (Cajas de selección)</div><br>
+        <div>
+            <input name="frutas" id="Manzana" value="Manzana" type="checkbox"><label for="Manzana">Manzana</label><br>
+            <input name="frutas" id="Pera" value="Pera" type="checkbox"><label for="Pera">Pera</label><br>
+            <input name="frutas" id="Durazno" value="Durazno" type="checkbox"><label for="Durazno">Durazno</label><br>
+            <input name="frutas" id="Bananas" value="Bananas" type="checkbox"><label for="Bananas">Bananas</label><br>
+        </div>
+        <br>
+
+        <button type="submit">Enviar</button>
+
+        <!-- metodo get y post (el metodo post se utiliza para formularios de inicio de sesion) -->
+
+        <!-- estructuras de selección -->
+
+        <h3>seleeccione una de las opciones</h3>
+
+        <label for="Mujer">
+            <div>Hombre</div>
+            <input type="radio" name="genero" id="Hombre">
+        </label><br>
+
+        <label for="Mujer">
+            <div>Mujer</div>
+            <input type="radio" name="genero" id="Mujer">
+        </label><br>
+        
+        <label for="Otro">
+            <div>Otro</div>
+            <input type="radio" name="genero" id="Otro">
+        </label><br><br>
+
+        <input type="submit" name="Enviar" id="Enviar"><br><br>
+
+        <!-- <label for="opciones">
+            <div>Hombre</div><br>
+            <input type="radio" name="opciones" id=""><br>
+        </label><br>
+        
+        <label for="opciones"><br>
+            <div>Mujer</div>
+            <input type="radio" name="opciones" id=""><br>
+        </label><br>
+        
+        <label for="opciones"><br>
+            <div>Otro</div>
+            <input type="radio" name="opciones" id=""><br>
+        </label><br>
+        
+        <br>
+        <br>     -->
+
+        <!-- entreada de tipo color -->
+        
+        <input name="color" type="color">
+        <br>   
+        <br>
+        <input name="archivo" type="file">
+
+        <br>
+        <br>
+
+        
+        <label for="send">
+            <input type="submit" name="Aceptar" id="">
+        </label>
+            
+    </form>
+
+</body>
+
+</html>

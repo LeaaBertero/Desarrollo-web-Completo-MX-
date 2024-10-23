@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de tablas</title>
+
+    <style>
+        /* tablas iniciales */
+        table {
+            border-collapse: collapse;
+            font-size: 25px;
+        }
+
+        thead {
+            background-color: brown;
+            color: whitesmoke;
+        }
+
+        th,td {
+            border: 3px solid orangered;
+            padding: 7px 10px;
+
+
+        }
+
+        /* Tablas de informacion basica */
+        .informacionBasica{
+            background-color: blueviolet;
+        }
+        
+        .aspectoFisico{
+            background-color:steelblue;
+        }
+
+        /* Grupo de columnas */
+        .col1{
+            background-color: red;
+        }
+
+        .col2{
+            background-color: crimson;
+        }
+
+        .col3{
+            background-color: burlywood;
+        }
+
+        
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Las tablas nuevas se crean afuera del contexto de las demas etiquetas de tablas -->
+
+    <h1>Ejemplo de tablas</h1>
+
+    <table>
+        <thead>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <th>Zapatos nike</th>
+                <th>Zapatos Ultra ligeros</th>
+                <th>100</th>
+
+            </tr>
+
+            <tr>
+
+                <th>Bolso Gucci</th>
+                <th>Bolso con argollas</th>
+                <th>140</th>
+            
+            </tr>
+
+        </tbody>
+
+        <br>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>240</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+
+    <table>
+        <tbody>
+
+            <tr>
+                <th rowspan="4">Paises americanos</th>
+                <th>Colombia</th>
+            </tr>
+
+            <tr>
+                <th>México</th>
+            </tr>
+
+            <tr>
+                <th>Canadá</th>
+            </tr>
+
+            <tr>
+                <th>Brasil</th>
+            </tr>
+
+            <tr>
+                <th rowspan="4">Paises europeos</th>
+                <th>España</th>
+            </tr>
+
+            <tr>
+                <th>Italia</th>
+            </tr>
+
+            <tr>
+                <th>Francia</th>
+            </tr>
+
+            <tr>
+                <th>Suiza</th>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <table>
+
+
+        
+        <!-- etiqueta para titulos en tablas (siempre va a tomar el centrado de la pagina)-->
+        <caption>Usuarios</caption>
+
+        <!-- encabezado -->
+        <thead>
+
+            <tr>
+                <th class="informacionBasica" colspan="4">Información básica</th>
+                <th class="aspectoFisico" colspan="2">Aspecto físico</th>
+            </tr>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Ciudad</th>
+                <th>Teléfono</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                
+            </tr>
+
+        </thead>
+
+        <!-- Cuerpo -->
+        <tbody>
+
+            <tr>
+                <td>Leandro</td>
+                <td>Bertero</td>
+                <td>Córdoba</td>
+                <td>534543534</td>
+                <td>53453453535</td>
+                <td>53453453535</td>
+            </tr>
+
+            <tr>
+                <td>Lina</td>
+                <td>Díaz</td>
+                <td>Córdoba</td>
+                <td>6544567675</td>
+                <td>53453453535</td>
+                <td>53453453535</td>
+            </tr>
+
+        </tbody>
+
+
+        <!-- Pié de página -->
+        <!-- <tfoot>
+
+            <tr>
+
+                <td>Hola</td>
+                <td>Hola</td>
+                <td>Hola</td>
+                <td>Hola</td>
+                <td>53453453535</td>
+                <td>53453453535</td>
+
+            </tr>
+
+        </tfoot> -->
+
+    </table>
+
+    <br>
+
+    <table>
+
+        <colgroup span="3" style="background-color: aquamarine; width: 300px;"></colgroup>
+        
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+        </colgroup>
+
+
+
+        <tr>
+            <td>Leandro</td>
+            <td>Bertero</td>
+            <td>Córdoba</td>
+            <td>534543534</td>
+            <td>534543534</td>
+            <td>534543534</td>
+            <td>534543534</td>
+        </tr>
+
+        <tr>
+            <td>Lina</td>
+            <td>Díaz</td>
+            <td>Córdoba</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>534543534</td>
+        </tr>
+
+        <tr>
+            <td>Lina</td>
+            <td>Díaz</td>
+            <td>Córdoba</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>534543534</td>
+        </tr>
+
+        <tr>
+            <td>Lina</td>
+            <td>Díaz</td>
+            <td>Córdoba</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>534543534</td>
+        </tr>
+
+        <tr>
+            <td>Lina</td>
+            <td>Díaz</td>
+            <td>Córdoba</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>6544567675</td>
+            <td>534543534</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

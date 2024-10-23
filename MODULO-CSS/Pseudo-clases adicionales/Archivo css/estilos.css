@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#Title-PseudoClase{
+    font-size: 40px;
+    color: aqua;
+    background-color: blue;
+    text-shadow: 5px 5px 5px greenyellow;
+    text-align: center;
+    border: 2px solid black;
+    margin: 30px;
+    padding: 30px;
+}
+
+section{
+    height: 200px;
+    padding: 20px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    background-color: deeppink;
+}
+
+#section1{
+    background-color: aqua;
+    
+}
+
+#section2{
+    background-color: coral;
+    
+}
+
+#section3{
+    background-color: antiquewhite;
+    
+}
+
+h1{
+    text-align: center;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+#secciones{
+    padding: 20px;
+    color: black;
+    text-shadow: 5px 5px 5px red;
+    box-shadow: 5px 5px 5px red;
+    border-radius: 12px;
+}
+
+#texto{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#enlace{
+    box-shadow: 5px 5px 5px palevioletred;
+    padding: 10px;
+}
+
+/* selector universal (:root{}) - (es lo  mismo que *{selector universal}) */
+:root{
+    background-color: teal;
+    font-family: cursive;
+}
+
+:empty{
+    width: 60px;
+    height: 60px;
+    border-radius:60%;
+    background-color: blue;
+}
+
+#titulo-uno{
+    background-color: blue;
+    color: antiquewhite;
+    text-shadow: 5px 5px 5px cyan;
+    border: 5px solid whitesmoke;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+#titulo-dos{
+    background-color: blue;
+    color: antiquewhite;
+    text-shadow: 5px 5px 5px cyan;
+    border: 5px solid whitesmoke;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+:not(p){
+    /* color: red; */
+    background-color: pink;
+}
+

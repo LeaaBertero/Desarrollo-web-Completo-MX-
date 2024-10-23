@@ -1,0 +1,135 @@
+/* selector universal */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+#titulo{
+    font-size: 40px;
+    font-family: 'Margarine', cursive;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid lightskyblue;
+    padding: 20px;
+    background-color: orangered;
+    text-shadow: 2px 2px blue;
+    color: whitesmoke;
+}
+
+.caja{
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    /* border: 10px solid black; */
+    border-top: 10px solid black;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid yellow;
+    border-right: 10px solid orangered;
+    padding: 10px 30px 10px 20px;
+    border-bottom-color: fuchsia;
+    border-top-style: dashed;
+    border-bottom-style: dotted ;
+    
+}
+
+p{
+    font-size: 20px;
+    background-color: aquamarine;
+    border: 10px dashed rgba(40, 105, 21, 0.61);
+    /* padding: 10px; */
+    /* margin-top: 15px;
+    margin-right: 15px; */
+}
+
+#segundo-titulo {
+    border: 5px dashed blue;
+    background-color: aquamarine;
+    color: black;
+    text-shadow: 2px 2px 2px green;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.contenedor{
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+    border:  3px solid #8d1e84;
+    overflow: hidden;
+    display: table;
+    padding: 10px;
+    background-color: cornsilk;
+}
+
+.cajita{
+    height: 100px;
+    width: 50%;
+    background-color: aquamarine;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* agregado de acá para abajo */
+    /* border: 2px dashed black; */
+}
+
+#numero{
+    background-color: brown;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* titulo modelo de cajas - segunda parte */
+
+#tit-Modelos{
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-size: 50px;
+    border: 2px solid blue;
+    color: orangered;
+    background-color: aqua;
+    text-shadow: 5px 5px 5px black;
+    max-width: 450px;
+    margin-left: 500px;
+}
+
+nav{
+    margin: 40px;
+    border: 2px dashed red;
+    padding: 10px;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 5px;
+    border: 2px dashed;
+}
+
+span{
+    display: block;
+    width: 70px;
+    height: 20px;
+    background-color: brown;
+    color: white;
+    padding: 3px;
+
+    
+}
+
+#lista{
+    font-size: 30px;
+}
